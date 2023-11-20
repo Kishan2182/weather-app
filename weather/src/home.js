@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
 
 const Home = () => {
-  const apikey="a3669d619561edfdd2047ee7bf107065";
+  const apikey=process.env.REACT_APP_API_KEY;
   const [data, setData] = useState({});
   const [inputcity, setInputCity] = useState("");
 
